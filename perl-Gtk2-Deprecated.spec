@@ -9,6 +9,7 @@ License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  http://asofyet.org/muppet/software/gtk2-perl/%module-%version.tar.bz2
 URL: http://gtk2-perl.sf.net/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: gtk+2-devel perl-devel perl-ExtUtils-Depends perl-Gtk2 > 1.00
 BuildRequires: glitz-devel
 
