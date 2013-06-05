@@ -3,12 +3,12 @@
 
 Summary:	Perl module for deprecated gtk+-2.x widgets
 Name:		perl-%{module}
-Version:	0.05
-Release:	11
+Version:	%perl_convert_version 0.06
+Release:	1
 License: 	GPL or Artistic
 Group:		Development/GNOME and GTK+
 URL:		http://gtk2-perl.sf.net/
-Source:		http://asofyet.org/muppet/software/gtk2-perl/%{module}-%{version}.tar.bz2
+Source:		http://asofyet.org/muppet/software/gtk2-perl/Gtk2-Deprecated-0.06.tar.gz
 BuildRequires:	perl-devel	
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	perl(ExtUtils::Depends)
@@ -88,4 +88,5 @@ make OPTIMIZE="%{optflags}"
 
 * Sat Jan 10 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.01-1mdk
 - initial release
+
 
