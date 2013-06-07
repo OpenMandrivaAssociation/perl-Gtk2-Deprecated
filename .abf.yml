@@ -1,2 +1,4 @@
+removed_sources:
+  Gtk2-Deprecated-0.05.tar.bz2: 2a75c784ee844ae0c857dfaa44cd5ccd9290820e
 sources:
-  "Gtk2-Deprecated-0.05.tar.bz2": 2a75c784ee844ae0c857dfaa44cd5ccd9290820e
+  Gtk2-Deprecated-0.06.tar.gz: 9e7f40055c8d86023b96982b1657aa373af889aa

@@ -1,14 +1,15 @@
 %define module Gtk2-Deprecated
 %define fmodule Gtk2/Deprecated
+%define upstream_version 0.06
 
 Summary:	Perl module for deprecated gtk+-2.x widgets
 Name:		perl-%{module}
-Version:	0.05
-Release:	11
+Version:	%perl_convert_version 0.06
+Release:	1
 License: 	GPL or Artistic
 Group:		Development/GNOME and GTK+
 URL:		http://gtk2-perl.sf.net/
-Source:		http://asofyet.org/muppet/software/gtk2-perl/%{module}-%{version}.tar.bz2
+Source:		http://asofyet.org/muppet/software/gtk2-perl/Gtk2-Deprecated-0.06.tar.gz
 BuildRequires:	perl-devel	
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	perl(ExtUtils::Depends)
@@ -20,7 +21,7 @@ This module provides perl access to the widgets that were deprecated
 in gtk+2.x.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{module}-%{upstream_version}
 find -type d -name CVS | rm -rf 
 
 %build
@@ -38,6 +39,7 @@ make OPTIMIZE="%{optflags}"
 %{perl_vendorarch}/%{fmodule}.pm
 %{perl_vendorarch}/auto/%{fmodule}
 %{perl_vendorarch}/Gtk2/*.pod
+%{perl_vendorarch}/Gtk2/Gdk
 
 
 
@@ -88,4 +90,5 @@ make OPTIMIZE="%{optflags}"
 
 * Sat Jan 10 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.01-1mdk
 - initial release
+
 
