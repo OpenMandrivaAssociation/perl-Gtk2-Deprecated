@@ -1,6 +1,6 @@
 %define module Gtk2-Deprecated
 %define fmodule Gtk2/Deprecated
-
+%define upstream_version 0.06
 Summary:	Perl module for deprecated gtk+-2.x widgets
 Name:		perl-%{module}
 Version:	%perl_convert_version 0.06
@@ -20,7 +20,7 @@ This module provides perl access to the widgets that were deprecated
 in gtk+2.x.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{module}-%{upstream_version}
 find -type d -name CVS | rm -rf 
 
 %build
@@ -38,6 +38,7 @@ make OPTIMIZE="%{optflags}"
 %{perl_vendorarch}/%{fmodule}.pm
 %{perl_vendorarch}/auto/%{fmodule}
 %{perl_vendorarch}/Gtk2/*.pod
+%{perl_vendorarch}/Gtk2/Gdk
 
 
 
@@ -88,5 +89,6 @@ make OPTIMIZE="%{optflags}"
 
 * Sat Jan 10 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.01-1mdk
 - initial release
+
 
 
