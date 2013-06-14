@@ -91,4 +91,3 @@ make OPTIMIZE="%{optflags}"
 * Sat Jan 10 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.01-1mdk
 - initial release
 
-
