@@ -5,7 +5,7 @@
 Summary:	Perl module for deprecated gtk+-2.x widgets
 Name:		perl-%{module}
 Version:	%perl_convert_version 0.06
-Release:	1
+Release:	2
 License: 	GPL or Artistic
 Group:		Development/GNOME and GTK+
 URL:		http://gtk2-perl.sf.net/
