@@ -8,7 +8,7 @@ Version:	%perl_convert_version 0.06
 Release:	3
 License: 	GPL or Artistic
 Group:		Development/GNOME and GTK+
-URL:		http://gtk2-perl.sf.net/
+URL:		https://gtk2-perl.sf.net/
 Source:		http://asofyet.org/muppet/software/gtk2-perl/Gtk2-Deprecated-0.06.tar.gz
 BuildRequires:	perl-devel	
 BuildRequires:	pkgconfig(gtk+-2.0)
