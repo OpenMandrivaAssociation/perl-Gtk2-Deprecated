@@ -10,6 +10,7 @@ License: 	GPL or Artistic
 Group:		Development/GNOME and GTK+
 URL:		https://gtk2-perl.sf.net/
 Source:		http://asofyet.org/muppet/software/gtk2-perl/Gtk2-Deprecated-0.06.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel	
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	perl(ExtUtils::Depends)
