@@ -1,11 +1,9 @@
 %define module Gtk2-Deprecated
 %define fmodule Gtk2/Deprecated
-%define upstream_version 0.06
-
 Summary:	Perl module for deprecated gtk+-2.x widgets
 Name:		perl-%{module}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.06
+Release:	5
 License: 	GPL or Artistic
 Group:		Development/GNOME and GTK+
 URL:		https://gtk2-perl.sf.net/
@@ -22,7 +20,7 @@ This module provides perl access to the widgets that were deprecated
 in gtk+2.x.
 
 %prep
-%setup -q -n %{module}-%{upstream_version}
+%setup -q -n %{module}-%{version}
 find -type d -name CVS | rm -rf 
 
 %build
